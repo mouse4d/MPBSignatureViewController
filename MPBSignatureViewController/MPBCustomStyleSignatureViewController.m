@@ -135,6 +135,7 @@ NSString *const MPBSignatureViewBundleName = @"MPBSignatureViewResources";
 }
 
 - (UIImage*) imageForScheme: (MPBSignatureViewControllerConfigurationScheme) scheme {
+    
     switch (scheme) {
         case MPBSignatureViewControllerConfigurationSchemeMaestro:
             return [self imageWithName:@"maestro_image"];
@@ -145,9 +146,18 @@ NSString *const MPBSignatureViewBundleName = @"MPBSignatureViewResources";
             return [self imageWithName:@"visacard_image"];
         case MPBSignatureViewControllerConfigurationSchemeAmex:
             return [self imageWithName:@"amex"];
-        default:
+        case MPBSignatureViewControllerConfigurationSchemeChinaUnionPay:
+            return [self imageWithName:@"china_union_pay"];
+        case MPBSignatureViewControllerConfigurationSchemeDinersClub:
+            return [self imageWithName:@"diners_image"];
+        case MPBSignatureViewControllerConfigurationSchemeJCB:
+            return [self imageWithName:@"jcb_image"];
+        case MPBSignatureViewControllerConfigurationSchemeNone:
             return nil;
+            
     }
+    
+    return nil;
 }
 
 - (void) setupTargets {

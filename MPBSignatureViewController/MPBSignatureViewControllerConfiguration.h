@@ -31,6 +31,9 @@ typedef NS_ENUM(int, MPBSignatureViewControllerConfigurationScheme) {
     MPBSignatureViewControllerConfigurationSchemeMastercard,
     MPBSignatureViewControllerConfigurationSchemeMaestro,
     MPBSignatureViewControllerConfigurationSchemeAmex,
+    MPBSignatureViewControllerConfigurationSchemeChinaUnionPay,
+    MPBSignatureViewControllerConfigurationSchemeJCB,
+    MPBSignatureViewControllerConfigurationSchemeDinersClub,
     MPBSignatureViewControllerConfigurationSchemeNone
 };
 
